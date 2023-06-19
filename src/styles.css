@@ -1,0 +1,82 @@
+img {
+  display: block;
+  max-height: 300px;
+  margin-right: 20px;
+}
+
+body {
+  padding: 20px;
+  background-color: #ecd6c0;
+  font-family: 'Pathway Extreme', sans-serif;
+}
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.loader {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  display: flex;
+  margin:15px auto;
+  position: relative;
+  background: #FFF;
+  box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+  box-sizing: border-box;
+  animation: shadowPulse 2s linear infinite;
+}
+
+@keyframes shadowPulse {
+  33% {
+    background: #FFF;
+    box-shadow: -24px 0 #fc8769, 24px 0 #FFF;
+  }
+  66% {
+    background: #fc8769;
+    box-shadow: -24px 0 #FFF, 24px 0 #FFF;
+  }
+  100% {
+    background: #FFF;
+    box-shadow: -24px 0 #FFF, 24px 0 #fc8769;
+  }
+}
+
+@keyframes lineGrow {
+  0% {
+    background-size: 0% auto;
+  }
+
+  100% {
+    background-size: 100% auto;
+  }
+}
+
+.error {
+  color: red;
+}
+
+.cat-info {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.info-title {
+  max-width: 400px;
+  margin: 0;
+}
+
+.info-description {
+  max-width: 400px;
+  margin-top: 24px;
+}
